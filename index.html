@@ -1131,6 +1131,40 @@ section{position:relative;overflow:hidden;}
   margin-top:20px;
 }
 
+/* ─── SPONSORS ─── */
+.sponsor-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:32px;
+  justify-content:center;
+  align-items:center;
+  max-width:1000px;
+  margin:0 auto;
+}
+.sponsor-card{
+  border:1px solid rgba(212,168,67,0.25);
+  border-radius:8px;
+  padding:32px 28px;
+  background:linear-gradient(135deg,rgba(212,168,67,0.06),rgba(6,12,13,0.9));
+  text-align:center;
+  transition:all 0.3s;
+  min-width:220px;
+  backdrop-filter:blur(8px);
+}
+.sponsor-card:hover{
+  border-color:rgba(212,168,67,0.6);
+  transform:translateY(-6px);
+  box-shadow:0 12px 40px rgba(0,0,0,0.5),0 0 30px rgba(212,168,67,0.15);
+}
+.sponsor-logo-wrap{
+  display:flex;justify-content:center;align-items:center;
+  height:100px;margin-bottom:16px;
+}
+.sponsor-name{
+  font-family:'Cinzel',serif;font-size:1rem;
+  font-weight:700;color:var(--cream);
+  letter-spacing:0.1em;
+}
 /* ─── ANIMATED GREEK FIRE TORCHES - REMOVED ─── */
 
 /* ─── REVEAL ANIMATIONS ─── */
@@ -2343,7 +2377,7 @@ section{position:relative;overflow:hidden;}
           <div class="event-rules">
             <h4>Rules</h4>
             <ul>
-              <li>Team of 2</li>
+              <li>Teams of 2 members</li>
               <li>Video duration: 30 seconds – 1:30 minutes</li>
               <li>Language: Kannada or English</li>
               <li>All footage must be shot within the college campus</li>
@@ -2584,6 +2618,38 @@ section{position:relative;overflow:hidden;}
   </svg>
 </div>
 
+<!-- SPONSORS -->
+<section id="sponsors" style="padding:100px 40px;background:linear-gradient(180deg,#060C0D,#080F10,#060C0D);position:relative;overflow:hidden;text-align:center;">
+  <div style="position:relative;z-index:2;">
+    <div class="section-ornament reveal">⸻ ✦ ⸻</div>
+    <h2 class="section-title reveal">Our Sponsors</h2>
+    <p class="section-subtitle reveal">The mighty patrons who power the glory of ZYROS</p>
+    <div class="section-divider reveal">
+      <div class="divider-line"></div>
+      <div class="divider-icon">🏛️</div>
+      <div class="divider-line"></div>
+    </div>
+    <div class="sponsor-grid reveal">
+
+      <div class="sponsor-card">
+        <div class="sponsor-logo-wrap">
+          <img src="nandhini logo.webp" style="width:160px;height:100px;object-fit:contain;">
+        </div>
+        <div class="sponsor-name">Nandini</div>
+      </div>
+
+      <div class="sponsor-card">
+        <div class="sponsor-logo-wrap">
+          <img src="bamul.png" style="width:160px;height:100px;object-fit:contain;">
+        </div>
+        <div class="sponsor-name">Bamul</div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
 <!-- CONTACT -->
 <section id="contact">
   <!-- Greek coin watermark -->
